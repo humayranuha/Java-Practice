@@ -15,5 +15,13 @@ public class Strings {
         System.out.println("Ends with '    ': " + greeting.endsWith("    "));
         System.out.println("Index of 'o': " + greeting.indexOf('o'));
         System.out.println(greeting);
+
+        // concat method
+        String firstName = "Humayra";
+        String middleName = "Alamgir";
+        String lastName = "Nuha";
+
+        String fullName = firstName.concat(" ").concat(middleName).concat(" ").concat(lastName);
+        System.out.println("Full Name: " + fullName);
     }
 }
