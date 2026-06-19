@@ -1,17 +1,17 @@
-class Animal {
+class AnimalP {
     public void animalSound() {
         System.out.println("Animal makes sound!!!");
     }
 }
 
-class Dog extends Animal {
+class DogP extends AnimalP {
     @Override
     public void animalSound() {
         System.out.println("Bow Bow!!!");
     }
 }
 
-class Cat extends Animal {
+class CatP extends AnimalP {
     @Override
     public void animalSound() {
         System.out.println("Meow, meow!!!");
@@ -20,9 +20,9 @@ class Cat extends Animal {
 
 public class Polymorphism {
     public static void main(String[] args) {
-        Animal animal = new Animal();
-        Dog dog = new Dog();
-        Cat cat = new Cat();
+        AnimalP animal = new AnimalP();
+        DogP dog = new DogP();
+        CatP cat = new CatP();
 
         animal.animalSound();
         dog.animalSound();
